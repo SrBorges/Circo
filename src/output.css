@@ -464,6 +464,21 @@
   .bg-\[url\(\'\/Desktop\/sessao-um\/bg1\.png\'\)\] {
     background-image: url('/Desktop/sessao-um/bg1.png');
   }
+  .bg-\[url\(\'\/Mobile\/Sessao-dois\/bg2-familia\'\)\] {
+    background-image: url('/Mobile/Sessao-dois/bg2-familia');
+  }
+  .bg-\[url\(\'\/Mobile\/Sessao-dois\/bg2-familia\.png\'\)\] {
+    background-image: url('/Mobile/Sessao-dois/bg2-familia.png');
+  }
+  .bg-\[url\(\'\/Mobile\/background-Familia\.png\'\)\] {
+    background-image: url('/Mobile/background-Familia.png');
+  }
+  .bg-\[url\(\'\/Mobile\/background-familia\.png\'\)\] {
+    background-image: url('/Mobile/background-familia.png');
+  }
+  .bg-\[url\(\'\/Mobile\/sessao-dois\/bg2-familia\'\)\] {
+    background-image: url('/Mobile/sessao-dois/bg2-familia');
+  }
   .bg-\[url\(\'\/principal\/background-6\.png\'\)\] {
     background-image: url('/principal/background-6.png');
   }
@@ -558,6 +573,11 @@
       display: grid;
     }
   }
+  .lg\:h-screen {
+    @media (width >= 64rem) {
+      height: 100vh;
+    }
+  }
   .lg\:min-h-screen {
     @media (width >= 64rem) {
       min-height: 100vh;
@@ -583,6 +603,11 @@
       row-gap: calc(var(--spacing) * 37);
     }
   }
+  .lg\:bg-\[url\(\'\/Desktop\/sessao-um\/bg1\.png\'\)\] {
+    @media (width >= 64rem) {
+      background-image: url('/Desktop/sessao-um/bg1.png');
+    }
+  }
   .lg\:bg-\[url\(\'\/principal\/bg-4\.png\'\)\] {
     @media (width >= 64rem) {
       background-image: url('/principal/bg-4.png');
@@ -593,9 +618,19 @@
       background-size: cover;
     }
   }
+  .lg\:bg-fixed {
+    @media (width >= 64rem) {
+      background-attachment: fixed;
+    }
+  }
   .lg\:bg-center {
     @media (width >= 64rem) {
       background-position: center;
+    }
+  }
+  .lg\:bg-no-repeat {
+    @media (width >= 64rem) {
+      background-repeat: no-repeat;
     }
   }
 }

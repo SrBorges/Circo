@@ -370,6 +370,9 @@
   .justify-center {
     justify-content: center;
   }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
+  }
   .gap-15 {
     gap: calc(var(--spacing) * 15);
   }

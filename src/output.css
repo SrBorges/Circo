@@ -234,6 +234,9 @@
   .resize {
     resize: both;
   }
+  .flex-col {
+    flex-direction: column;
+  }
   .place-content-center {
     place-content: center;
   }
@@ -242,6 +245,12 @@
   }
   .justify-center {
     justify-content: center;
+  }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
+  }
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
   }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
@@ -348,6 +357,11 @@
   .max-lg\:row-start-5 {
     @media (width < 64rem) {
       grid-row-start: 5;
+    }
+  }
+  .max-lg\:row-start-6 {
+    @media (width < 64rem) {
+      grid-row-start: 6;
     }
   }
   .max-lg\:mt-0 {
@@ -461,6 +475,11 @@
       display: block;
     }
   }
+  .lg\:flex {
+    @media (width >= 64rem) {
+      display: flex;
+    }
+  }
   .lg\:grid {
     @media (width >= 64rem) {
       display: grid;
@@ -506,6 +525,11 @@
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
+  .lg\:flex-row {
+    @media (width >= 64rem) {
+      flex-direction: row;
+    }
+  }
   .lg\:place-content-center {
     @media (width >= 64rem) {
       place-content: center;
@@ -514,6 +538,11 @@
   .lg\:place-items-center {
     @media (width >= 64rem) {
       place-items: center;
+    }
+  }
+  .lg\:gap-4 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 4);
     }
   }
   .lg\:gap-y-37 {

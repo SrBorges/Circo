@@ -257,6 +257,9 @@
   .bg-\[url\(\'\/Mobile\/Sessao-dois\/bg2-familia\.png\'\)\] {
     background-image: url('/Mobile/Sessao-dois/bg2-familia.png');
   }
+  .bg-\[url\(\'\/Mobile\/Sessao-tres\/fundo-3\'\)\] {
+    background-image: url('/Mobile/Sessao-tres/fundo-3');
+  }
   .bg-\[url\(\'\/principal\/background-6\.png\'\)\] {
     background-image: url('/principal/background-6.png');
   }
@@ -268,6 +271,9 @@
   }
   .bg-center {
     background-position: center;
+  }
+  .bg-no-repeat {
+    background-repeat: no-repeat;
   }
   .text-center {
     text-align: center;
@@ -337,6 +343,31 @@
   .max-lg\:hidden {
     @media (width < 64rem) {
       display: none;
+    }
+  }
+  .max-lg\:bg-\[url\(\'\/Mobile\/Sessao-tres\/fundo-3\'\)\] {
+    @media (width < 64rem) {
+      background-image: url('/Mobile/Sessao-tres/fundo-3');
+    }
+  }
+  .max-lg\:bg-\[url\(\'\/Mobile\/Sessao-tres\/fundo-3\.png\'\)\] {
+    @media (width < 64rem) {
+      background-image: url('/Mobile/Sessao-tres/fundo-3.png');
+    }
+  }
+  .max-lg\:bg-cover {
+    @media (width < 64rem) {
+      background-size: cover;
+    }
+  }
+  .max-lg\:bg-center {
+    @media (width < 64rem) {
+      background-position: center;
+    }
+  }
+  .max-lg\:bg-no-repeat {
+    @media (width < 64rem) {
+      background-repeat: no-repeat;
     }
   }
   .max-lg\:text-center {

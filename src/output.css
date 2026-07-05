@@ -19,6 +19,7 @@
     --color-amber-900: oklch(41.4% 0.112 45.904);
     --color-amber-950: oklch(27.9% 0.077 45.635);
     --color-green-900: oklch(39.3% 0.095 152.535);
+    --color-black: #000;
     --spacing: 0.25rem;
     --container-4xl: 56rem;
     --text-xs: 0.75rem;
@@ -39,7 +40,9 @@
     --text-7xl--line-height: 1;
     --text-8xl: 6rem;
     --text-8xl--line-height: 1;
+    --font-weight-extralight: 200;
     --font-weight-normal: 400;
+    --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --tracking-wide: 0.025em;
     --radius-2xl: 1rem;
@@ -336,6 +339,9 @@
   .w-15 {
     width: calc(var(--spacing) * 15);
   }
+  .w-20 {
+    width: calc(var(--spacing) * 20);
+  }
   .w-25 {
     width: calc(var(--spacing) * 25);
   }
@@ -351,8 +357,17 @@
   .w-80 {
     width: calc(var(--spacing) * 80);
   }
+  .w-90 {
+    width: calc(var(--spacing) * 90);
+  }
   .w-100 {
     width: calc(var(--spacing) * 100);
+  }
+  .w-105 {
+    width: calc(var(--spacing) * 105);
+  }
+  .w-110 {
+    width: calc(var(--spacing) * 110);
   }
   .w-150 {
     width: calc(var(--spacing) * 150);
@@ -362,6 +377,9 @@
   }
   .w-full {
     width: 100%;
+  }
+  .max-w-110 {
+    max-width: calc(var(--spacing) * 110);
   }
   .flex-2 {
     flex: 2;
@@ -583,6 +601,9 @@
   .font-mono {
     font-family: var(--font-mono);
   }
+  .font-sans {
+    font-family: var(--font-sans);
+  }
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
@@ -603,19 +624,36 @@
     font-size: var(--text-7xl);
     line-height: var(--tw-leading, var(--text-7xl--line-height));
   }
+  .text-\[0\.90rem\] {
+    font-size: 0.90rem;
+  }
+  .text-\[0\.95rem\] {
+    font-size: 0.95rem;
+  }
   .text-\[1\.1rem\] {
     font-size: 1.1rem;
   }
   .text-\[1\.2rem\] {
     font-size: 1.2rem;
   }
+  .text-\[1rem\] {
+    font-size: 1rem;
+  }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
   }
+  .font-extralight {
+    --tw-font-weight: var(--font-weight-extralight);
+    font-weight: var(--font-weight-extralight);
+  }
   .font-normal {
     --tw-font-weight: var(--font-weight-normal);
     font-weight: var(--font-weight-normal);
+  }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
   }
   .text-amber-50 {
     color: var(--color-amber-50);
@@ -641,11 +679,20 @@
   .text-amber-900 {
     color: var(--color-amber-900);
   }
+  .text-black {
+    color: var(--color-black);
+  }
   .text-green-900 {
     color: var(--color-green-900);
   }
   .uppercase {
     text-transform: uppercase;
+  }
+  .font-stretch-95\% {
+    font-stretch: 95%;
+  }
+  .font-stretch-125\% {
+    font-stretch: 125%;
   }
   .underline {
     text-decoration-line: underline;

@@ -968,6 +968,16 @@
       row-gap: calc(var(--spacing) * 75);
     }
   }
+  .lg\:bg-\[url\(\'\/Desktop\/Sessao-esp\/bg-4\.png\'\)\] {
+    @media (width >= 64rem) {
+      background-image: url('/Desktop/Sessao-esp/bg-4.png');
+    }
+  }
+  .lg\:bg-\[url\(\'\/Desktop\/Sessao-esp\/bg4\.png\'\)\] {
+    @media (width >= 64rem) {
+      background-image: url('/Desktop/Sessao-esp/bg4.png');
+    }
+  }
   .lg\:bg-\[url\(\'\/Desktop\/sessao-tres\/bg3\.png\'\)\] {
     @media (width >= 64rem) {
       background-image: url('/Desktop/sessao-tres/bg3.png');

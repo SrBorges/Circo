@@ -787,6 +787,11 @@
       gap: calc(var(--spacing) * 30);
     }
   }
+  .max-lg\:gap-y-9 {
+    @media (width < 64rem) {
+      row-gap: calc(var(--spacing) * 9);
+    }
+  }
   .max-lg\:bg-\[url\(\'\/Mobile\/Sessao-tres\/fundo-3\.png\'\)\] {
     @media (width < 64rem) {
       background-image: url('/Mobile/Sessao-tres/fundo-3.png');
@@ -823,9 +828,24 @@
       font-size: 0.95rem;
     }
   }
+  .lg\:col-start-0 {
+    @media (width >= 64rem) {
+      grid-column-start: 0;
+    }
+  }
   .lg\:col-start-1 {
     @media (width >= 64rem) {
       grid-column-start: 1;
+    }
+  }
+  .lg\:col-start-2 {
+    @media (width >= 64rem) {
+      grid-column-start: 2;
+    }
+  }
+  .lg\:col-start-3 {
+    @media (width >= 64rem) {
+      grid-column-start: 3;
     }
   }
   .lg\:row-start-1 {
@@ -883,6 +903,11 @@
       margin-bottom: calc(var(--spacing) * 9);
     }
   }
+  .lg\:mb-10 {
+    @media (width >= 64rem) {
+      margin-bottom: calc(var(--spacing) * 10);
+    }
+  }
   .lg\:block {
     @media (width >= 64rem) {
       display: block;
@@ -908,9 +933,24 @@
       min-height: 100vh;
     }
   }
+  .lg\:w-50 {
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 50);
+    }
+  }
   .lg\:w-100 {
     @media (width >= 64rem) {
       width: calc(var(--spacing) * 100);
+    }
+  }
+  .lg\:w-130 {
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 130);
+    }
+  }
+  .lg\:w-140 {
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 140);
     }
   }
   .lg\:w-150 {
@@ -956,6 +996,11 @@
   .lg\:gap-20 {
     @media (width >= 64rem) {
       gap: calc(var(--spacing) * 20);
+    }
+  }
+  .lg\:gap-y-15 {
+    @media (width >= 64rem) {
+      row-gap: calc(var(--spacing) * 15);
     }
   }
   .lg\:gap-y-37 {

@@ -20,12 +20,34 @@
   lg:bg-no-repeat
   lg:h-screen
   lg:w-full
+
+  max-lg:bg-[url('/Mobile/sessao-seis/circo-hoje-mob.png')]
+max-lg:bg-center
+max-lg:bg-cover
+max-lg:bg-no-repeat
+max-lg:h-screen
+max-lg:w-full
+
+
+  
 ">
 
-<div class="flex items-end justify-center h-screen">
-      <div class="border-4 border-amber-300 w-150 bg-amber-900 py-8 px-10">
+<!-- Botão Desktop -->
+<div class="hidden lg:flex items-end justify-center h-screen">
+      <div class="border-4 border-amber-300 w-150 bg-amber-900 lg:py-8 px-10">
         <a href="/main/index.html">
             <p class="text-5xl text-amber-300 uppercase text-center font-bold">
+                Página Inicial
+            </p>
+        </a>
+    </div>
+</div>
+
+<!-- Botão Mobile -->
+<div class="flex lg:hidden items-center justify-center translate-y-5 h-screen">
+      <div class="border-4 border-amber-300 w-48 bg-amber-900 py-2 px-4">
+        <a href="/main/index.html">
+            <p class="text-lg text-amber-300 uppercase text-center font-bold">
                 Página Inicial
             </p>
         </a>
